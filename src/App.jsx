@@ -31,7 +31,7 @@ const HorizontalScrollCarousel = () => {
   return (
     <section ref={targetRef} className="relative h-[300vh] bg-neutral-900">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex h-auto justify-between gap-4 ">
+        <motion.div style={{ x }} className="flex h-auto justify-between gap-2 md:gap-4 ">
           {data.map((card_data,key) => {
             return <Card  title={card_data.title} desc={card_data.desc} Icon={card_data.icon} key={key} />;
           })}
